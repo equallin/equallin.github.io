@@ -1,185 +1,294 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<title>Fashion AI</title>
-<meta name="description" content="Thoughts, reviews and ideas since 1999."/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link rel="shortcut icon" href="#">
-<link rel="stylesheet" type="text/css" href="assets/css/screen.css"/>
-<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-<script src="assets/js/html5-qrcode.min.js"></script>
-<style>
-  .result{
-    background-color: green;
-    color:#fff;
-    padding:20px;
-  }
-  .row{
-	border: 2px solid black;
-	border-radius: 20px;
-	width: 500px;
-	height: 500px;
-	margin: 0 auto;
-    display:flex;
-	margin-top: 50px;
-	box-shadow: 0 0 1px 1px
-  }
-  .row:hover {
-	margin-top: 40px;
-	box-shadow: 0 3px 15px 3px #888888;
-  }
-  .col{
-	width: 500px;
-	margin: 0 auto;
-	text-align: center;
-  }
-  #qna {
-	margin-top: 5px;
-	/* box-shadow: 0 0 0 0; */
-	width: 300px;
-	height: 40px
-  }
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Fashion AI</title>
+	<meta name="description" content="Thoughts, reviews and ideas since 1999." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="#">
+	<link rel="stylesheet" type="text/css" href="assets/css/screen.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+	<script src="assets/js/html5-qrcode.min.js"></script>
+	<link rel="stylesheet" href="assets/css/animations.css">
+	<style>
+		.result {
+			background-color: green;
+			color: #fff;
+			padding: 20px;
+		}
 
-  #qna:hover {
-	margin-top: 0;
-	box-shadow: 0 3px 15px 3px #888888;
-	width: 300px;
-	height: 270px
-  }
+		.row {
+			border: 2px solid black;
+			border-radius: 20px;
+			width: 500px;
+			height: 500px;
+			margin: 0 auto;
+			display: flex;
+			margin-top: 50px;
+			box-shadow: 0 0 1px 1px
+		}
 
-  #robot {
-	position: fixed;
-	bottom: 0;
-	right: 20px;
-  }
-</style>
+		.row:hover {
+			margin-top: 40px;
+			box-shadow: 0 3px 15px 3px #888888;
+		}
+
+		.col {
+			width: 500px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		#qna {
+			margin-top: 5px;
+			/* box-shadow: 0 0 0 0; */
+			width: 300px;
+			height: 40px
+		}
+
+		#qna:hover {
+			margin-top: 0;
+			box-shadow: 0 3px 15px 3px #888888;
+			width: 300px;
+			height: 270px
+		}
+
+		#robot {
+			position: fixed;
+			bottom: 0;
+			right: 20px;
+		}
+	</style>
+
 </head>
+<!-- --------------nav bar------------------------ -->
+
 <body class="home-template">
-<div class="site-wrapper">
-	<nav class="main-nav overlay clearfix">
-	<a class="blog-logo" href="index.html"><img src="assets/img/logo.png" alt="super AI salesman"/></a>
-	<ul id="menu">
-		<li class="nav-home nav-current" role="presentation"><a href="#content">scan QR-code</a></li>
-		<li class="nav-home nav-current" role="presentation"><a href="#result">Scan Result</a></li>
-		<li class="nav-home nav-current" role="presentation"><a href="assets/product.html">Today's Pick Up</a></li>
-		<li class="nav-home nav-current" role="presentation"><a href="#"></a></li>
-		<li class="nav-home nav-current" role="presentation"><a href="#"></a></li>
-		<li class="nav-home nav-current" role="presentation"><a href="#"></a></li>
-		<span class="socialheader">
-		<a href="#"><span class='symbol'>circletwitterbird</span></a>
-		<a href="#"><span class='symbol'>circlefacebook</span></a>
-		<a href="#"><span class='symbol'>circlegoogleplus</span></a>
-		<a href="mailto:"><span class='symbol'>circleemail</span></a>
-		</span>
-	</ul>
-	</nav>
-	<header class="main-header " style="background-image: url()">
-	<div>
-		<iframe src="https://player.vimeo.com/video/518048398?quality=1080p&amp;app_id=122963?start=90;" 
-		frameborder="0" autoplay=1 loop muted allowfullscreen volumn="0" style="position: absolute; width: 100%;height: 100%;opacity:0.3;"></iframe>
-	</div>
-	<div class="vertical">
-		<div class="main-header-content inner">
-			<h1 class="page-title">FASHION AI</h1>
+	<div class="site-wrapper">
+		<nav class="main-nav overlay clearfix">
+			<a class="blog-logo" href="index.html"><img src="assets/img/logo.png" alt="super AI salesman" /></a>
+			<ul id="menu">
+				<li class="nav-home nav-current" role="presentation"><a href="#content">scan QR-code</a></li>
+				<li class="nav-home nav-current" role="presentation"><a href="#result">Scan Result</a></li>
+				<li class="nav-home nav-current" role="presentation"><a href="assets/product.html">Today's Pick Up</a>
+				</li>
+				<li class="nav-home nav-current" role="presentation"><a href="#"></a></li>
+				<li class="nav-home nav-current" role="presentation"><a href="#"></a></li>
+				<li class="nav-home nav-current" role="presentation"><a href="#"></a></li>
+				<span class="socialheader">
+					<a href="#"><span class='symbol'>circletwitterbird</span></a>
+					<a href="#"><span class='symbol'>circlefacebook</span></a>
+					<a href="#"><span class='symbol'>circlegoogleplus</span></a>
+					<a href="mailto:"><span class='symbol'>circleemail</span></a>
+				</span>
+			</ul>
+		</nav>
+		<!-- --------------------------------------------- -->
+		<header class="main-header " style="background-image: url()">
+			<div>
+				<iframe src="https://player.vimeo.com/video/518048398?quality=1080p&amp;app_id=122963?start=90;"
+					frameborder="0" autoplay=1 loop muted allowfullscreen volumn="0"
+					style="position: absolute; width: 100%;height: 100%;opacity:0.3;"></iframe>
 			</div>
-			<h2 class="page-description"></h2>
-			<br>
-			<h2 class="page-description">" I don't do fashion. I am fashion. "</h2>
-		</div>
+			<div class="vertical">
+				<div class="main-header-content inner">
+					<h1 class="page-title">FASHION AI</h1>
+				</div>
+				<h2 class="page-description"></h2>
+				<br>
+				<h2 class="page-description">" I don't do fashion. I am fashion. "</h2>
+			</div>
 	</div>
 	<a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 	</header>
 	<main id="content" class="content" role="main">
-	<br><br><br>
-	<!-- --------------QR-code相機---------------------- -->
-	<div id="scan" style="margin: 0 auto; width: 500px;text-align: center;"><h3>scan QR code</h3></div>
-	<div id="qrcode" class="row">
-		<div style="width:500px;margin: 0 auto;border-radius: 20px;" id="reader"></div>
-	</div><hr>
-	<div class="col">
-		<h4 style="text-align: center;">Scan Result</h4><br>
-		<div id="result"></div>
-	</div>
-	<!-- --------------------------------------------- -->
-	<br><br><br><hr>
-	<!-- --------------推薦服飾三套---------------------- -->
-	<div class="wraps">
-		<!-- <img src="assets/img/shadow.png" class="wrapshadow"> -->
-		<div class="grid">
-			<!-- 第一格 -->
-			<div class="grid-item">
-				<article class="post">
-				<div class="wrapgriditem">
-					<header class="post-header">
-					<h1 class="post-title"><a href="">1</a></h1>
-					</header>
-					<section class="post-excerpt">
-					<img>clothes
-					</section>
+		<br><br><br>
+		<!-- --------------QR-code相機-------------------- -->
+		<div class="bounce" id="scan" style="margin: 0 auto; width: 500px;text-align: center;">
+			<h3>scan QR code</h3>
+		</div>
+		<div id="qrcode" class="row">
+			<div style="width:500px;margin: 0 auto;border-radius: 20px;" id="reader"></div>
+		</div>
+		<hr>
+		<div class="col">
+			<h4 class="bounce" style="text-align: center;">Scan Result</h4><br>
+			<div id="result"></div>
+			<img id="imgdb" src="">
+		</div>
+		<!-- --------------------------------------------- -->
+		<!-- <br><br><br> -->
+		<hr>
+		<!-- --------------推薦服飾三套--------------------- -->
+		<div class="wraps">
+			<div style="text-align: center;">
+				<h3 class="bounce">Best recommended outfit :</h3>
+				<div style="width: 350px;height: 350px;margin: 20px auto;text-align: center;">
+					<!-- <img id="outfit" style="margin: 13% auto;" src="assets/images/101.jpg"> -->
+					<img class="bigEntrance" id="outfit" style="margin: auto;" src="">
 				</div>
-				</article>
+				<div style="width: 400px;height: 100px;margin: 20px auto;">
+					<h3 id="score" class="bounce">Your Fashion score:</h3>
+				</div>
 			</div>
-			<!-- 第二格 -->
-			<div class="grid-item">
-				<article class="post tag-romance">
-				<div class="wrapgriditem">
-					<header class="post-header">
-					<h2 class="post-title"><a href="">2</a></h2>
-					</header>
-					<section class="post-excerpt">
-					<img>clothes
-					</section>
+			
+			<div class="grid">
+				<!-- top -->
+				<div class="grid-item">
+					<article class="post">
+						<div class="wrapgriditem" style="text-align: center;">
+							<header class="post-header">
+								<h1 class="post-title"><a href="">Top</a></h1>
+							</header>
+							<section class="post-excerpt">
+								<!-- <img id="top" src="assets/images/101.jpg"> -->
+								<a><img id="top1" src=""></a>
+								<a><img id="top2" src=""></a>
+							</section>
+						</div>
+					</article>
 				</div>
-				</article>
-			</div>
-			<!-- 第三格 -->
-			<div class="grid-item">
-				<article class="post">
-				<div class="wrapgriditem">
-					<header class="post-header">
-					<h2 class="post-title"><a href="">3</a></h2>
-					</header>
-					<section class="post-excerpt">
-					<img>clothes
-					</section>
+				<!-- bottom -->
+				<div class="grid-item">
+					<article class="post tag-romance" style="text-align: center;">
+						<div class="wrapgriditem">
+							<header class="post-header">
+								<h2 class="post-title"><a href="">Bottom</a></h2>
+							</header>
+							<section class="post-excerpt">
+								<!-- <img id="bottom" src="assets/images/102.jpg"> -->
+								<a><img id="bottom" src=""></a>
+							</section>
+						</div>
+					</article>
 				</div>
-				</article>
+				<!-- accessories -->
+				<div class="grid-item">
+					<article class="post">
+						<div class="wrapgriditem" style="text-align: center;">
+							<header class="post-header">
+								<h2 class="post-title"><a href="">Accessories</a></h2>
+							</header>
+							<section class="post-excerpt">
+								<!-- <img id="accessories" src="assets/images/102.jpg"> -->
+								<a><img id="accessories" src=""></a>
+							</section>
+						</div>
+					</article>
+				</div>
 			</div>
 		</div>
-	</div>
 	</main>
 	<!-- --------------------------------------------- -->
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<footer class="site-footer clearfix">
-	<a href="#top" id="back-to-top" class="back-top"></a>
-	<div class="text-center">
-		<a href="index.html">Fashion AI salesman</a> &copy; 2021<br/>
-		by <a href="">AIEN12第四組</a>
-	</div>
+		<a href="#top" id="back-to-top" class="back-top"></a>
+		<div class="text-center">
+			<a href="index.html">Fashion AI salesman</a> &copy; 2021<br />
+			by <a href="">AIEN12第四組</a>
+		</div>
 	</footer>
-</div>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="assets/js/masonry.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript">
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/masonry.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
 
-	function onScanSuccess(qrCodeMessage) {
-		document.getElementById('result').innerHTML = '<span class="result">'+qrCodeMessage+'</span>';
-		document.getElementById('result').innerHTML = '<img src="'+qrCodeMessage+'">'
-	}
-	function onScanError(errorMessage) {
-	  //handle scan error
-	}
-	var html5QrcodeScanner = new Html5QrcodeScanner(
-		"reader", { fps: 10, qrbox: 250 });
-	html5QrcodeScanner.render(onScanSuccess, onScanError);
-</script>
+
+
+		function onScanSuccess(qrCodeMessage) {
+
+			// document.getElementById('result').innerHTML = '<span class="result">' + qrCodeMessage + '</span>';
+			// ----------從網址show圖片----------
+			// document.getElementById('result').innerHTML = '<img src="' + qrCodeMessage + '">'
+			console.log(qrCodeMessage)
+
+			var data = { url: qrCodeMessage }
+			// -----------------連 DB-------------------
+			$.ajax({
+				type: 'post',
+				url: 'http://localhost:3000/image',
+				contentType: 'application/json;charset=utf-8',
+				data: JSON.stringify(data)
+			}).done(function (result) {
+				console.log(result[0].ID);
+				// -------------
+				// console.log(a)
+				// -------------
+				// console.log(result)
+				// console.log(result[1].name)
+				// --------a=pic, b=score, c=outfit, d=top, e=bottom, f=accessories-----------
+				a = result[0].ID
+				// b = result[0].score
+				// c1 = result[0].top
+				// c2 = result[0].top
+				// d = result[0].bottom
+				// e = result[0].accessories
+				var pic = document.getElementById('imgdb')
+				var score = document.getElementById('score')
+				var outfit = document.getElementById('outfit')
+				var top1 = document.getElementById('top1')
+				var top2 = document.getElementById('top2')
+				var bottom = document.getElementById('bottom')
+				var accessories = document.getElementById('accessories')
+				pic.src = 'assets/images/'+ a +'.jpeg'
+				score.innerHTML = 'Your Fashion score: 100'
+				outfit.src = 'assets/images/0.jpg'
+				top1.src = 'assets/images/1.jpg'
+				top2.src = 'assets/images/2.jpg'
+				bottom.src = 'assets/images/4.jpg'
+				accessories.src = 'assets/images/5.jpg'
+			}).fail(function (err) {
+				// alert(JSON.stringify(err));
+				alert('ERROR')
+			});
+		}
+
+		function onScanError(errorMessage) {
+			//handle scan error
+		}
+		var html5QrcodeScanner = new Html5QrcodeScanner(
+			"reader", { fps: 10, qrbox: 250 });
+		html5QrcodeScanner.render(onScanSuccess, onScanError);
+
+
+		// -------------------連MySQL------------------------
+		// $(document).ready(function () {
+
+		// 	var data = { url: '' }
+
+		// 	$.ajax({
+		// 		type: 'post',
+		// 		url: 'http://localhost:3000/image',
+		// 		contentType: 'application/json;charset=utf-8',
+		// 		data: JSON.stringify(data)
+		// 	}).done(function (result) {
+		// 		// -------------
+		// 		// console.log(a)
+		// 		// -------------
+		// 		// console.log(result)
+		// 		// console.log(result[1].name)
+		// 		// a = result[1].name
+		// 		// var pic = document.getElementById('imgdb')
+		// 		// pic.src = 'assets/images/'+ a
+		// 	}).fail(function (err) {
+		// 		// alert(JSON.stringify(err));
+		// 		alert('ERROR')
+		// 	});
+		// });
+// --------------------------------------------------
+
+	</script>
 </body>
+<!-- --------------QnA robot---------------------- -->
 <div id="robot" style="text-align: center;">
 	<h5>QnA <img src="assets/img/QnA.png" style="width: 25px;"></h5>
 	<iframe id="qna"
 		src='https://webchat.botframework.com/embed/finalproject-robot?s=2-uEANgak4s.itrinjvDcihKMc4GsM_N5IIEik5z2zi7E7Ccx9jsfeU'
 		style='border-radius: 20px;border: 0.5px solid rgb(177, 170, 170);'></iframe>
 </div>
+<!-- --------------------------------------------- -->
+
 </html>
