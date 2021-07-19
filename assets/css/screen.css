@@ -880,12 +880,13 @@ body.nav-opened .nav {
 .grid-item .post {
 	position:relative;
 	border:#EBF2F6 1px solid;
+	border-radius: 20px;
 	word-wrap:break-word;
-		margin-bottom:20px;
-	 padding-bottom:0;
-	 max-width:100%;
-	 transition:all 0.4s;
-	 background:#fff;
+	margin-bottom:20px;
+	padding-bottom:0;
+	max-width:100%;
+	transition:all 0.4s;
+	/* background:#fff; */
 	overflow:hidden;
 }
 .grid-item .post img {
@@ -898,7 +899,7 @@ body.nav-opened .nav {
 }
 .grid-item .post.featured .wrapgriditem {
 	background:#f7faf9;
-	box-shadow: none;
+	box-shadow:#98a0a4;
 }
 /* Add a little circle in the middle of the border-bottom on our .post just for the lolz and stylepoints. */
 .post:after {
@@ -1886,11 +1887,11 @@ a.btn-more {
 	text-decoration:none;
 }
 .grid {
-	margin-left:2.5%;
+	margin-left:2%;
 	margin-right:2%;
 }
 .grid-item {
-	width:32.00%;
+	width:20.00%;
 }
 .entry-title-divider {
 	position:relative;
@@ -1930,8 +1931,8 @@ a.btn-more {
 .text-center {
 	text-align:center;
 }
-.grid-item {
-}
+/* .grid-item {
+} */
 .grid-item img {
 	transition:transform 0.5s linear;
 }
@@ -2048,9 +2049,9 @@ div#preloader {
 	background:#333;
 }
 @media only screen and (max-width:1220px) {
-	.grid-item {
-		width:48%;
-	}
+	/* .grid-item { */
+		/* width:%; */
+	/* } */
 	.wrapshadow {
 		display:none;
 	}
@@ -2058,9 +2059,9 @@ div#preloader {
 @media only screen and (max-width:930px) {
 }
 @media only screen and (max-width:650px) {
-	.grid-item {
-		width:100%;
-	}
+	/* .grid-item { */
+		/* width:100%; */
+	/* } */
 }
 @media only screen and (max-width:500px) {
 	.content,.post-template .content,.content,.post-template .content {

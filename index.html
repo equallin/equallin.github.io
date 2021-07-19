@@ -147,7 +147,7 @@
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
 								<!-- <img id="top" src="assets/images/101.jpg"> -->
-								<a><img id="first1" class="shows" src="assets/images/2.jpg"></a>
+								<a><img id="first1" class="shows" src=""></a>
 							</section>
 						</div>
 					</article>
@@ -157,7 +157,7 @@
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
 								<!-- <img id="bottom" src="assets/images/102.jpg"> -->
-								<a><img id="second1" class="shows" src="assets/images/3.jpg"></a>
+								<a><img id="first2" class="shows" src=""></a>
 							</section>
 						</div>
 					</article>
@@ -167,7 +167,7 @@
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
 								<!-- <img id="bottom" src="assets/images/102.jpg"> -->
-								<a><img id="second1" class="shows" src="assets/images/4.jpg"></a>
+								<a><img id="first3" class="shows" src=""></a>
 							</section>
 						</div>
 					</article>
@@ -177,12 +177,31 @@
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
 								<!-- <img id="bottom" src="assets/images/102.jpg"> -->
-								<a><img id="second1" class="shows" src="assets/images/5.jpg"></a>
+								<a><img id="first4" class="shows" src=""></a>
 							</section>
 						</div>
 					</article>
 				</div>
+				<!-- <div class="grid-item" style="text-align: center;margin-left: 2.5px;">
+					<article class="post tag-romance">
+						<div class="wrapgriditem">
+							<section class="post-excerpt">
+								<a><img id="first5" class="shows" src=""></a>
+							</section>
+						</div>
+					</article>
+				</div>
+				<div class="grid-item" style="text-align: center;margin-left: 2.5px;">
+					<article class="post tag-romance">
+						<div class="wrapgriditem">
+							<section class="post-excerpt">
+								<a><img id="first6" class="shows" src=""></a>
+							</section>
+						</div>
+					</article>
+				</div> -->
 			</div>
+			<br><br><br><br><br><br>
 			<hr>
 			<!-- <div class="grid" style="margin: 0 10%;width: 1200px;">
 				<div class="grid-item" style="margin-left: 50px;height: 500px;width: 400px;">
@@ -216,7 +235,7 @@
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
 								<!-- <img id="top" src="assets/images/101.jpg"> -->
-								<a><img id="first1" class="shows" src="assets/images/a.jpg"></a>
+								<a><img id="second1" class="shows" src=""></a>
 							</section>
 						</div>
 					</article>
@@ -226,7 +245,7 @@
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
 								<!-- <img id="bottom" src="assets/images/102.jpg"> -->
-								<a><img id="second1" class="shows" src="assets/images/b.jpg"></a>
+								<a><img id="second2" class="shows" src=""></a>
 							</section>
 						</div>
 					</article>
@@ -236,7 +255,7 @@
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
 								<!-- <img id="bottom" src="assets/images/102.jpg"> -->
-								<a><img id="second1" class="shows" src="assets/images/c.jpg"></a>
+								<a><img id="second3" class="shows" src=""></a>
 							</section>
 						</div>
 					</article>
@@ -246,7 +265,7 @@
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
 								<!-- <img id="bottom" src="assets/images/102.jpg"> -->
-								<a><img id="second1" class="shows" src="assets/images/d.jpg"></a>
+								<a><img id="second4" class="shows" src=""></a>
 							</section>
 						</div>
 					</article>
@@ -254,6 +273,7 @@
 			</div>
 		</div>
 	</main>
+	<br><br><br><br><br><br>
 	<!-- --------------------------------------------- -->
 	<br><br>
 	<footer class="site-footer clearfix">
@@ -282,7 +302,7 @@
 			// -----------------連 DB-------------------
 			$.ajax({
 				type: 'post',
-				url: 'http://aien12four.cxr0m1n24wv8.us-east-1.rds.amazonaws.com/api/image',
+				url: 'http://localhost:3000/api/image',
 				contentType: 'application/json;charset=utf-8',
 				data: JSON.stringify(data)
 			}).done(function (result) {
@@ -302,18 +322,18 @@
 				// var pic = document.getElementById('imgdb')
 				var pic = document.getElementById('imgdb')
 				// var score = document.getElementById('score')
-				var outfit = document.getElementById('outfit')
-				var first1 = document.getElementById('first1')
-				var first2 = document.getElementById('first2')
-				var first3 = document.getElementById('first3')
-				var first4 = document.getElementById('first4')
-				var first5 = document.getElementById('first5')
+				// var outfit = document.getElementById('outfit')
+				// var first1 = document.getElementById('first1')
+				// var first2 = document.getElementById('first2')
+				// var first3 = document.getElementById('first3')
+				// var first4 = document.getElementById('first4')
+				// var first5 = document.getElementById('first5')
 				// ---------------------------------
-				var second1 = document.getElementById('second1')
-				var second2 = document.getElementById('second2')
-				var second3 = document.getElementById('second3')
-				var second4 = document.getElementById('second4')
-				var second5 = document.getElementById('second5')
+				// var second1 = document.getElementById('second1')
+				// var second2 = document.getElementById('second2')
+				// var second3 = document.getElementById('second3')
+				// var second4 = document.getElementById('second4')
+				// var second5 = document.getElementById('second5')
 				// ---------------------------------
 				// var third1 = document.getElementById('third1')
 				// var third2 = document.getElementById('third2')
@@ -322,7 +342,7 @@
 				// var third5 = document.getElementById('third5')
 				pic.src = 'assets/images/'+ a +'.jpg'
 				// score.innerHTML = 'Your Fashion score: 100'
-				outfit.src = 'assets/images/1.jpg'
+				// outfit.src = 'assets/images/1.jpg'
 				first1.src = 'assets/images/2.jpg'
 				first2.src = 'assets/images/3.jpg'
 				first3.src = 'assets/images/4.jpg'
