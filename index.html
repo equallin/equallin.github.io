@@ -60,6 +60,13 @@
 			bottom: 0;
 			right: 20px;
 		}
+
+		.shows {
+			width: 200px;
+			/* height: 20px; */
+			padding: 5px;
+			border-radius: 20px;
+		}
 	</style>
 
 </head>
@@ -68,7 +75,7 @@
 <body class="home-template">
 	<div class="site-wrapper">
 		<nav class="main-nav overlay clearfix">
-			<a class="blog-logo" href="index.html"><img src="assets/img/logo.png" alt="super AI salesman" /></a>
+			<a class="blog-logo" href="index.html"><img style="width: 200px;" src="assets/img/logo.png" alt="super AI salesman" /></a>
 			<ul id="menu">
 				<li class="nav-home nav-current" role="presentation"><a href="#content">scan QR-code</a></li>
 				<li class="nav-home nav-current" role="presentation"><a href="#result">Scan Result</a></li>
@@ -94,7 +101,7 @@
 			</div>
 			<div class="vertical">
 				<div class="main-header-content inner">
-					<h1 class="page-title">FASHION AI</h1>
+					<h1 class="page-title">Les Vêtement</h1>
 				</div>
 				<h2 class="page-description"></h2>
 				<br>
@@ -106,7 +113,7 @@
 	<main id="content" class="content" role="main">
 		<br><br><br>
 		<!-- --------------QR-code相機-------------------- -->
-		<div class="bounce" id="scan" style="margin: 0 auto; width: 500px;text-align: center;">
+		<div id="scan" style="margin: 0 auto; width: 500px;text-align: center;">
 			<h3>scan QR code</h3>
 		</div>
 		<div id="qrcode" class="row">
@@ -114,66 +121,132 @@
 		</div>
 		<hr>
 		<div class="col">
-			<h4 class="bounce" style="text-align: center;">Scan Result</h4><br>
+			<h4 style="text-align: center;">Scan Result</h4><br>
 			<div id="result"></div>
-			<img id="imgdb" src="">
+			<img id="imgdb" style="width: 400px;border-radius: 20px;" src="">
 		</div>
 		<!-- --------------------------------------------- -->
 		<!-- <br><br><br> -->
 		<hr>
 		<!-- --------------推薦服飾三套--------------------- -->
-		<div class="wraps">
-			<div style="text-align: center;">
-				<h3 class="bounce">Best recommended outfit :</h3>
-				<div style="width: 350px;height: 350px;margin: 20px auto;text-align: center;">
+		<div class="wraps" style="text-align: center;">
+			<!-- <div style="text-align: center;">
+				<h3>Best recommended outfit :</h3>
+				<div style="width: 350px;height: 350px;margin: 20px auto;text-align: center;"> -->
 					<!-- <img id="outfit" style="margin: 13% auto;" src="assets/images/101.jpg"> -->
-					<img class="bigEntrance" id="outfit" style="margin: auto;" src="">
-				</div>
-				<div style="width: 400px;height: 100px;margin: 20px auto;">
-					<h3 id="score" class="bounce">Your Fashion score:</h3>
-				</div>
-			</div>
-			
-			<div class="grid">
-				<!-- top -->
-				<div class="grid-item">
+					<!-- <img class="bigEntrance" id="outfit" style="margin: auto;" src="">
+				</div> -->
+				<!-- <div style="width: 400px;height: 100px;margin: 20px auto;"> -->
+					<!-- <h3 id="score" class="bounce">Your Fashion score:</h3> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			<h3 style="margin-bottom: 50px;">First</h3>
+			<div class="grid" style="margin: 0 7%;width: 1300px;">
+				<div class="grid-item" style="text-align: center;margin-left: 2.5px;">
 					<article class="post">
-						<div class="wrapgriditem" style="text-align: center;">
-							<header class="post-header">
-								<h1 class="post-title"><a href="">Top</a></h1>
-							</header>
+						<div class="wrapgriditem">
 							<section class="post-excerpt">
 								<!-- <img id="top" src="assets/images/101.jpg"> -->
-								<a><img id="top1" src=""></a>
-								<a><img id="top2" src=""></a>
+								<a><img id="first1" class="shows" src="assets/images/2.jpg"></a>
 							</section>
 						</div>
 					</article>
 				</div>
-				<!-- bottom -->
-				<div class="grid-item">
-					<article class="post tag-romance" style="text-align: center;">
+				<div class="grid-item" style="text-align: center;margin-left: 2.5px;">
+					<article class="post tag-romance">
 						<div class="wrapgriditem">
-							<header class="post-header">
-								<h2 class="post-title"><a href="">Bottom</a></h2>
-							</header>
 							<section class="post-excerpt">
 								<!-- <img id="bottom" src="assets/images/102.jpg"> -->
-								<a><img id="bottom" src=""></a>
+								<a><img id="second1" class="shows" src="assets/images/3.jpg"></a>
 							</section>
 						</div>
 					</article>
 				</div>
-				<!-- accessories -->
-				<div class="grid-item">
-					<article class="post">
-						<div class="wrapgriditem" style="text-align: center;">
-							<header class="post-header">
-								<h2 class="post-title"><a href="">Accessories</a></h2>
-							</header>
+				<div class="grid-item" style="text-align: center;margin-left: 2.5px;">
+					<article class="post tag-romance">
+						<div class="wrapgriditem">
 							<section class="post-excerpt">
-								<!-- <img id="accessories" src="assets/images/102.jpg"> -->
-								<a><img id="accessories" src=""></a>
+								<!-- <img id="bottom" src="assets/images/102.jpg"> -->
+								<a><img id="second1" class="shows" src="assets/images/4.jpg"></a>
+							</section>
+						</div>
+					</article>
+				</div>
+				<div class="grid-item" style="text-align: center;margin-left: 2.5px;">
+					<article class="post tag-romance">
+						<div class="wrapgriditem">
+							<section class="post-excerpt">
+								<!-- <img id="bottom" src="assets/images/102.jpg"> -->
+								<a><img id="second1" class="shows" src="assets/images/5.jpg"></a>
+							</section>
+						</div>
+					</article>
+				</div>
+			</div>
+			<hr>
+			<!-- <div class="grid" style="margin: 0 10%;width: 1200px;">
+				<div class="grid-item" style="margin-left: 50px;height: 500px;width: 400px;">
+					<article class="post">
+						<div class="wrapgriditem">
+							<section class="post-excerpt"> -->
+								<!-- <img id="top" src="assets/images/101.jpg"> -->
+								<!-- <a><img id="first1" class="shows" style="width: 100%;" src="assets/images/1.jpg"></a>
+							</section>
+						</div>
+					</article>
+				</div>
+				<div class="grid-item" style="height: 600px;width: 600px;margin-left: 50px;">
+					<article class="post">
+						<div class="wrapgriditem">
+							<section class="post-excerpt"> -->
+								<!-- <img id="top" src="assets/images/101.jpg"> -->
+								<!-- <a><img id="second1" class="shows" src="assets/images/2.jpg"></a>
+								<a><img id="second1" class="shows" src="assets/images/3.jpg"></a>
+								<a><img id="second1" class="shows" src="assets/images/4.jpg"></a>
+								<a><img id="second1" class="shows" src="assets/images/5.jpg"></a>
+							</section>
+						</div>
+					</article>
+				</div>
+			</div> -->
+			<h3 style="margin-bottom: 50px;">Second</h3>
+			<div class="grid" style="margin: 0 7%;width: 1300px;">
+				<div class="grid-item" style="text-align: center;margin-left: 2.5px;">
+					<article class="post">
+						<div class="wrapgriditem">
+							<section class="post-excerpt">
+								<!-- <img id="top" src="assets/images/101.jpg"> -->
+								<a><img id="first1" class="shows" src="assets/images/a.jpg"></a>
+							</section>
+						</div>
+					</article>
+				</div>
+				<div class="grid-item" style="text-align: center;margin-left: 2.5px;">
+					<article class="post tag-romance">
+						<div class="wrapgriditem">
+							<section class="post-excerpt">
+								<!-- <img id="bottom" src="assets/images/102.jpg"> -->
+								<a><img id="second1" class="shows" src="assets/images/b.jpg"></a>
+							</section>
+						</div>
+					</article>
+				</div>
+				<div class="grid-item" style="text-align: center;margin-left: 2.5px;">
+					<article class="post tag-romance">
+						<div class="wrapgriditem">
+							<section class="post-excerpt">
+								<!-- <img id="bottom" src="assets/images/102.jpg"> -->
+								<a><img id="second1" class="shows" src="assets/images/c.jpg"></a>
+							</section>
+						</div>
+					</article>
+				</div>
+				<div class="grid-item" style="text-align: center;margin-left: 2.5px;">
+					<article class="post tag-romance">
+						<div class="wrapgriditem">
+							<section class="post-excerpt">
+								<!-- <img id="bottom" src="assets/images/102.jpg"> -->
+								<a><img id="second1" class="shows" src="assets/images/d.jpg"></a>
 							</section>
 						</div>
 					</article>
@@ -182,7 +255,7 @@
 		</div>
 	</main>
 	<!-- --------------------------------------------- -->
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br>
 	<footer class="site-footer clearfix">
 		<a href="#top" id="back-to-top" class="back-top"></a>
 		<div class="text-center">
@@ -209,7 +282,7 @@
 			// -----------------連 DB-------------------
 			$.ajax({
 				type: 'post',
-				url: 'http://localhost:3000/image',
+				url: 'http://aien12four.cxr0m1n24wv8.us-east-1.rds.amazonaws.com/api/image',
 				contentType: 'application/json;charset=utf-8',
 				data: JSON.stringify(data)
 			}).done(function (result) {
@@ -226,20 +299,47 @@
 				// c2 = result[0].top
 				// d = result[0].bottom
 				// e = result[0].accessories
+				// var pic = document.getElementById('imgdb')
 				var pic = document.getElementById('imgdb')
-				var score = document.getElementById('score')
+				// var score = document.getElementById('score')
 				var outfit = document.getElementById('outfit')
-				var top1 = document.getElementById('top1')
-				var top2 = document.getElementById('top2')
-				var bottom = document.getElementById('bottom')
-				var accessories = document.getElementById('accessories')
-				pic.src = 'assets/images/'+ a +'.jpeg'
-				score.innerHTML = 'Your Fashion score: 100'
-				outfit.src = 'assets/images/0.jpg'
-				top1.src = 'assets/images/1.jpg'
-				top2.src = 'assets/images/2.jpg'
-				bottom.src = 'assets/images/4.jpg'
-				accessories.src = 'assets/images/5.jpg'
+				var first1 = document.getElementById('first1')
+				var first2 = document.getElementById('first2')
+				var first3 = document.getElementById('first3')
+				var first4 = document.getElementById('first4')
+				var first5 = document.getElementById('first5')
+				// ---------------------------------
+				var second1 = document.getElementById('second1')
+				var second2 = document.getElementById('second2')
+				var second3 = document.getElementById('second3')
+				var second4 = document.getElementById('second4')
+				var second5 = document.getElementById('second5')
+				// ---------------------------------
+				// var third1 = document.getElementById('third1')
+				// var third2 = document.getElementById('third2')
+				// var third3 = document.getElementById('third3')
+				// var third4 = document.getElementById('third4')
+				// var third5 = document.getElementById('third5')
+				pic.src = 'assets/images/'+ a +'.jpg'
+				// score.innerHTML = 'Your Fashion score: 100'
+				outfit.src = 'assets/images/1.jpg'
+				first1.src = 'assets/images/2.jpg'
+				first2.src = 'assets/images/3.jpg'
+				first3.src = 'assets/images/4.jpg'
+				first4.src = 'assets/images/5.jpg'
+				// first5.src = 'assets/images/5.jpg'
+				// ----------------------------------
+				second1.src = 'assets/images/a.jpg'
+				second2.src = 'assets/images/b.jpg'
+				second3.src = 'assets/images/c.jpg'
+				second4.src = 'assets/images/d.jpg'
+				// second5.src = 'assets/images/1.jpg'
+				// ----------------------------------
+				// third1.src = 'assets/images/.jpg'
+				// third2.src = 'assets/images/.jpg'
+				// third3.src = 'assets/images/.jpg'
+				// third4.src = 'assets/images/.jpg'
+				// third5.src = 'assets/images/.jpg'
 			}).fail(function (err) {
 				// alert(JSON.stringify(err));
 				alert('ERROR')
