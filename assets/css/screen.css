@@ -884,10 +884,11 @@ body.nav-opened .nav {
 	word-wrap:break-word;
 	margin-bottom:20px;
 	padding-bottom:0;
-	max-width:100%;
+	/* max-width:100%; */
 	transition:all 0.4s;
 	/* background:#fff; */
 	overflow:hidden;
+	width: 270px;
 }
 .grid-item .post img {
 	margin-bottom:-10px;
@@ -1891,7 +1892,7 @@ a.btn-more {
 	margin-right:2%;
 }
 .grid-item {
-	width:20.00%;
+	width:22.00%;
 }
 .entry-title-divider {
 	position:relative;
@@ -1939,6 +1940,7 @@ a.btn-more {
 .grid-item img:hover {
 	transform:scale(1.2);
 	animation:10s ease 0s normal none infinite scale;
+	/* opacity: 0; */
 }
 .back-top {
 	position:absolute;
@@ -2059,9 +2061,9 @@ div#preloader {
 @media only screen and (max-width:930px) {
 }
 @media only screen and (max-width:650px) {
-	/* .grid-item { */
-		/* width:100%; */
-	/* } */
+	.grid-item {
+		width:100%;
+	}
 }
 @media only screen and (max-width:500px) {
 	.content,.post-template .content,.content,.post-template .content {

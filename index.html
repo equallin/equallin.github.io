@@ -44,15 +44,15 @@
 		#qna {
 			margin-top: 5px;
 			/* box-shadow: 0 0 0 0; */
-			width: 300px;
+			width: 260px;
 			height: 40px
 		}
 
 		#qna:hover {
 			margin-top: 0;
 			box-shadow: 0 3px 15px 3px #888888;
-			width: 300px;
-			height: 270px
+			width: 320px;
+			height: 380px
 		}
 
 		#robot {
@@ -62,11 +62,69 @@
 		}
 
 		.shows {
-			width: 150px;
+			width: 200px;
 			/* height: 20px; */
-			padding: 5px;
+			padding: 2px;
 			border-radius: 20px;
 		}
+
+		.map1 {
+			width: 25px;
+		}
+		.map1:hover {
+			/* background-image: url("assets/img/1.png"); */
+			margin-top: 0;
+			box-shadow: 0 3px 15px 3px #888888;
+			width: 320px;
+			height: 380px
+		}
+		/* #first2:hover {
+			background: url("assets/img/");
+		}
+		#first3:hover {
+			background: url("assets/img/");
+		}
+		#first4:hover {
+			background: url("assets/img/");
+		}
+		#second1:hover {
+			background: url("assets/img/");
+		}
+		#second2:hover {
+			background: url("assets/img/");
+		}
+		#second3:hover {
+			background: url("assets/img/");
+		}
+		#second4:hover {
+			background: url("assets/img/");
+		} */
+		.shows {
+        width: 200px;
+        margin: 20px;
+        padding: 15px;
+        border-radius: 25px;
+        border: 0.5px solid rgb(211, 206, 206);
+        transition:transform 0.5s linear;
+        opacity: 0.8;
+   		}
+		.shows:hover {
+        	transform:scale(1.2);
+        	animation:10s ease 0s normal none infinite scale;
+        	opacity: 1;
+    	}
+
+		#map1 {
+			width: 25px;
+		}
+		/* #map1:hover {
+			margin-top: 0;
+			box-shadow: 0 3px 15px 3px #888888;
+			width: 320px;
+			height: 380px;
+			background-image: url("assets/img/1.png");
+		} */
+		
 	</style>
 
 </head>
@@ -145,12 +203,46 @@
 				<!-- </div> -->
 			<!-- </div> -->
 			<h3 style="margin-bottom: 50px;">First</h3>
-			<div class="grid" style="margin: 0 0.2%;width: 950px;">
-				<div class="grid-item" style="text-align: center;margin-left: 15px;">
+			<div>
+				<!-- <div class="testClass" style="width: 300px;border:1px solid #cccccc">
+					<a><img id="first1" class="shows" src=""></a>
+					<a><img id="map1" src="assets/img/location.png"></a>
+				</div> -->
+
+				<a><img id="first1" class="shows" src=""></a>
+				<!-- <a><img id="map1" src="assets/img/location.png"></a> -->
+
+				<a><img id="first2" class="shows" src=""></a>
+				<!-- <a><img id="map2" style="width: 25px;" src="assets/img/location.png"></a> -->
+
+				<a><img id="first3" class="shows" src=""></a>
+				<!-- <a><img id="map3" style="width: 25px;" src="assets/img/location.png"></a> -->
+
+				<a><img id="first4" class="shows" src=""></a>
+				<!-- <a><img id="map4" style="width: 25px;" src="assets/img/location.png"></a> -->
+			</div>
+			<br><br><hr><br><br>
+			<h3 style="margin-bottom: 50px;">Second</h3>
+			<div>
+				<a><img id="second1" class="shows" src=""></a>
+				<!-- <a><img id="map5" style="width: 25px;" src="assets/img/location.png"></a> -->
+
+				<a><img id="second2" class="shows" src=""></a>
+				<!-- <a><img id="map6" style="width: 25px;" src="assets/img/location.png"></a> -->
+
+				<a><img id="second3" class="shows" src=""></a>
+				<!-- <a><img id="map7" style="width: 25px;" src="assets/img/location.png"></a> -->
+
+				<a><img id="second4" class="shows" src=""></a>
+				<!-- <a><img id="map8" style="width: 25px;" src="assets/img/location.png"></a> -->
+			</div>
+			<!-- <div class="grid" style="margin: 0 5%;width: 1300px;"> -->
+				<!-- <div class="grid-item" style="text-align: center;margin-left: 15px;">
 					<article class="post">
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
-								<a><img id="first1" class="shows" src="/assets/images/99901.jpg"></a>
+								<img id="first1" class="shows" src="" >
+								<a><img id="map1" src="assets/img/1.png"></a>
 							</section>
 						</div>
 					</article>
@@ -159,7 +251,8 @@
 					<article class="post tag-romance">
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
-								<a><img id="first2" class="shows" src="/assets/images/99902.jpg"></a>
+								<a><img id="first2" class="shows" src=""></a>
+								<img id="map2" style="width: 25px;" src="assets/img/location.png">
 							</section>
 						</div>
 					</article>
@@ -168,7 +261,8 @@
 					<article class="post tag-romance">
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
-								<a><img id="first3" class="shows" src="/assets/images/99905.jpg"></a>
+								<a><img id="first3" class="shows" src=""></a>
+								<img id="map3" style="width: 25px;" src="assets/img/location.png">
 							</section>
 						</div>
 					</article>
@@ -177,21 +271,23 @@
 					<article class="post tag-romance">
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
-								<a><img id="first4" class="shows" src="/assets/images/99907.jpg"></a>
+								<a><img id="first4" class="shows" src=""></a>
+								<img id="map4" style="width: 25px;" src="assets/img/location.png">
 							</section>
 						</div>
 					</article>
-				</div>
-			</div>
-			<!-- <br><br><br><br><br><br> -->
+				</div> -->
+			<!-- </div>
+			<br><br><br><br><br><br>
 			<hr>
 			<h3 style="margin-bottom: 50px;">Second</h3>
-			<div class="grid" style="margin: 0 0.2%;width: 950px;">
+			<div class="grid" style="margin: 0 5%;width: 1300px;">
 				<div class="grid-item" style="text-align: center;margin-left: 15px;">
 					<article class="post">
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
-								<a><img id="second1" class="shows" src="/assets/images/99902.jpg"></a>
+								<a><img id="second1" class="shows" src=""></a>
+								<img id="map5" style="width: 25px;" src="assets/img/location.png">
 							</section>
 						</div>
 					</article>
@@ -200,7 +296,8 @@
 					<article class="post tag-romance">
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
-								<a><img id="second2" class="shows" src="/assets/images/99903.jpg"></a>
+								<a><img id="second2" class="shows" src=""></a>
+								<img id="map6" style="width: 25px;" src="assets/img/location.png">
 							</section>
 						</div>
 					</article>
@@ -209,7 +306,8 @@
 					<article class="post tag-romance">
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
-								<a><img id="second3" class="shows" src="/assets/images/99906.jpg"></a>
+								<a><img id="second3" class="shows" src=""></a>
+								<img id="map7" style="width: 25px;" src="assets/img/location.png">
 							</section>
 						</div>
 					</article>
@@ -218,15 +316,17 @@
 					<article class="post tag-romance">
 						<div class="wrapgriditem">
 							<section class="post-excerpt">
-								<a><img id="second4" class="shows" src="/assets/images/99904.jpg"></a>
+								<a><img id="second4" class="shows" src=""></a>
+								<img id="map8" style="width: 25px;" src="assets/img/location.png">
 							</section>
 						</div>
 					</article>
-				</div>
-			</div>
-		</div>
+				</div> -->
+			<!-- </div> -->
+		<!-- </div> -->
+		<br><br><br><br><br><br>
 	</main>
-	<!-- <br><br><br><br><br><br> -->
+	
 	<!-- --------------------------------------------- -->
 	<!-- <br><br> -->
 	<footer class="site-footer clearfix">
@@ -242,13 +342,11 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 
-
-
 		function onScanSuccess(qrCodeMessage) {
 
 			// document.getElementById('result').innerHTML = '<span class="result">' + qrCodeMessage + '</span>';
 			// ----------從網址show圖片----------
-			document.getElementById('result').innerHTML = '<img style="border-radius: 20px;width: 250px;" src="/assets/images/' + qrCodeMessage + '.jpg">'
+			document.getElementById('result').innerHTML = '<img style="border-radius: 20px;width: 250px;" src="/assets/images/' + qrCodeMessage + '.png">'
 			console.log(qrCodeMessage)
 
 			var data = { url: qrCodeMessage }
@@ -277,16 +375,16 @@
 		// 		pic.src = 'assets/images/'+ a +'.jpg'
 		// 		// score.innerHTML = 'Your Fashion score: 100'
 		// 		// outfit.src = 'assets/images/1.jpg'
-		// 		first1.src = 'assets/images/2.jpg'
-		// 		first2.src = 'assets/images/3.jpg'
-		// 		first3.src = 'assets/images/4.jpg'
-		// 		first4.src = 'assets/images/5.jpg'
+				first1.src = 'assets/images/99901.png'
+				first2.src = 'assets/images/99902.png'
+				first3.src = 'assets/images/99903.png'
+				first4.src = 'assets/images/99904.png'
 		// 		// first5.src = 'assets/images/5.jpg'
 		// 		// ----------------------------------
-		// 		second1.src = 'assets/images/a.jpg'
-		// 		second2.src = 'assets/images/b.jpg'
-		// 		second3.src = 'assets/images/c.jpg'
-		// 		second4.src = 'assets/images/d.jpg'
+				second1.src = 'assets/images/99905.png'
+				second2.src = 'assets/images/99902.png'
+				second3.src = 'assets/images/99906.png'
+				second4.src = 'assets/images/99907.png'
 		// 		// second5.src = 'assets/images/1.jpg'
 		// 		// ----------------------------------
 			// }).fail(function (err) {
@@ -301,7 +399,6 @@
 		var html5QrcodeScanner = new Html5QrcodeScanner(
 			"reader", { fps: 10, qrbox: 250 });
 		html5QrcodeScanner.render(onScanSuccess, onScanError);
-
 
 		// -------------------連MySQL------------------------
 		// $(document).ready(function () {
@@ -329,6 +426,20 @@
 		// });
 // --------------------------------------------------
 
+	// function map(){
+	// 	document.getElementById("first1").src="assets/img/1.png";
+	// }
+	// document.onclick = function(e){//設定整個網頁的單擊事件
+	// e = e || window.event;//為了相容這樣寫。
+	// var target = e.target || e.srcElement;//用來點選的物件。為了相容這樣寫。
+	// if (target.className == "testClass"){//如果點選的物件，class為testClass，那麼開啟新視窗。
+	// var OpenWindow=window.open("","newwindow","height=","width=300px","","","toolbar=false","menubar=false","scrollbars=false","resizable=false","location=false","status=false");
+	// //在新視窗中寫入如下的HTML程式碼。
+	// OpenWindow.document.write("<img style='width:260px' src='assets/img/1.png'>");
+	// //在Javascript中，利用window.close()可以關閉當前視窗，但不能關閉當前標籤頁，不過由於這個視窗是我們自己新生成的，因此對於所有瀏覽器有效
+	// OpenWindow.document.write("<button onclick='javascript:window.close()'>關閉！</button>");
+	// }
+	// }
 	</script>
 
 <!-- --------------QnA robot---------------------- -->
